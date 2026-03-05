@@ -4,7 +4,10 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
 import steps.Steps;
 import tools.CSVDataProvider;
 import tools.DriverManager;
@@ -18,7 +21,7 @@ import java.util.Date;
 
 import static pages.BasePage.TIMEOUT;
 
-public class InvalidCardPaymentTest {
+public class EnablementSearchButton {
 
     private WebDriver webDriver;
     private Steps steps;
@@ -32,7 +35,7 @@ public class InvalidCardPaymentTest {
     private final String browser = System.getProperty("browser", "chrome");
 
     // ✅ TestNG necesita un constructor sin parámetros
-    public InvalidCardPaymentTest(String browser) {
+    public EnablementSearchButton(String browser) {
     }
 
     /**
@@ -88,17 +91,6 @@ public class InvalidCardPaymentTest {
 
         steps.performSearchOriginAndDestinationStation(originStation, destinationStation);
         steps.selectDepartureDate();
-        steps.selectTrainAndFare();
-        steps.getAndStoreDynamicPrice();
-        steps.verifyAndConfirmTravel();
-        steps.clickPopUpAndLinkAppear();
-        steps.verifyPriceIsEqualInData();
-        steps.introduceYourDataAndConfirm(firstName, firstSurname, secondSurname, dni, email, phone);
-        steps.verifyPriceIsEqualInPersonalize();
-        steps.confirmPersonalization();
-        steps.verifyPriceIsEqualInCompra();
-        steps.confirmPaymentData(emailBuyer, phoneBuyer);
-        steps.payment(bankCard, expirationDate, cvv);
     }
 
     @AfterMethod

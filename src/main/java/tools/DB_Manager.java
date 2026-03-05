@@ -30,7 +30,7 @@ public class DB_Manager {
             System.out.println(query);
             System.out.println("Resultados:\n");
 
-            // Displays query results
+            // Display query results
             int columnCount = rs.getMetaData().getColumnCount();
 
             // Print column names
