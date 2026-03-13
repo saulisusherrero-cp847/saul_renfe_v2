@@ -24,7 +24,7 @@ public class EnableSearchPassengersResultsTest {
     private Steps steps;
 
     /**
-     * Para definir el navegador a usar.
+     * TEST.Para definir el navegador a usar.
      * Se puede pasar por línea de comandos:
      *   -Dbrowser=firefox
      * Si no se pasa via CLI, usa "chrome" por defecto.
