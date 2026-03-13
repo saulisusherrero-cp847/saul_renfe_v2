@@ -27,7 +27,7 @@ public class EnableSearchPassengersResultsTest {
      * Navegador a usar.
      * Se puede pasar por línea de comandos:
      *   -Dbrowser=firefox
-     * Si no se pasa, usa "chrome" por defecto.
+     * Si no se pasa via CLI, usa "chrome" por defecto.
      */
     private final String browser = System.getProperty("browser", "chrome");
 
