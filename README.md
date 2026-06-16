@@ -1,7 +1,7 @@
 ﻿# Renfe Test Automation Framework
 
 ## Overview
-This repository contains a **test automation framework for Renfe web application testing**, developed using Java and Selenium.
+This repository contains a test automation framework for Renfe web application testing, developed using Java and Selenium.
 The project focuses on validating critical user flows such as booking and payment scenarios, including negative cases like invalid card payments.
 It follows best practices for scalable and maintainable UI automation.
 
